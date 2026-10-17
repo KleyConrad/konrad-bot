@@ -18,7 +18,7 @@
 .audio-linha input[type="range"] {
   flex: 1 1 160px;
   min-width: 0;
-  accent-color: #8dbaff;
+  accent-color: #f4f4f4;
   cursor: pointer;
 }
 
@@ -36,7 +36,7 @@
 
 /* Volume dentro de cada quadro de tela: agora funciona */
 .tile-volume {
-  color: #eaf1fb;
+  color: #f4f4f4;
 }
 
 .tile-volume .tile-icon-btn {

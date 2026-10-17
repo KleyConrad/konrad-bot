@@ -19,7 +19,7 @@
 .tile {
   position: relative;
   min-height: 0;
-  background: #000;
+  background: #161616;
   border-radius: 10px;
   overflow: hidden;
 }
