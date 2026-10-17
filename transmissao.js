@@ -5,7 +5,7 @@ const {
   EmbedBuilder,
 } = require('discord.js');
 
-const COR = '#161616'; // mesma borda azul do !tempo
+const COR = '#fff'; // mesma borda azul do !tempo
 
 function embedSemCall() {
   return new EmbedBuilder()
