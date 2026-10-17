@@ -761,32 +761,35 @@ input[type="range"]::-moz-range-thumb {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 40px 32px 28px;
+  padding: 44px 32px 30px;
   border: 1px solid var(--borda);
-  border-radius: 24px;
-  background: rgba(17, 20, 27, .8);
+  border-radius: 28px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(107, 163, 255, .10), transparent 60%),
+    rgba(17, 20, 27, .85);
   text-align: center;
+  font-family: "Nunito", Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 .login-marca {
-  font-size: .82rem;
-  font-weight: 700;
-  letter-spacing: .32em;
+  font-size: .9rem;
+  font-weight: 800;
+  letter-spacing: .3em;
   text-transform: uppercase;
 }
 
 .login-eyebrow {
   margin-top: 14px;
   color: var(--suave);
-  font-size: .7rem;
-  font-weight: 600;
-  letter-spacing: .18em;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .2em;
 }
 
 .login-card h1 {
-  font-size: 1.9rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.15;
   letter-spacing: -.01em;
 }
 
@@ -797,15 +800,16 @@ input[type="range"]::-moz-range-thumb {
 .login-sub {
   max-width: 34ch;
   color: var(--suave);
-  font-size: .92rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .login-beneficios {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 14px 0 6px;
+  gap: 14px;
+  margin: 18px 0 8px;
   text-align: left;
 }
 
@@ -821,9 +825,9 @@ input[type="range"]::-moz-range-thumb {
   width: 36px;
   height: 36px;
   flex: none;
-  border-radius: 10px;
-  background: var(--painel-2);
-  border: 1px solid var(--borda);
+  border-radius: 50%;
+  background: rgba(107, 163, 255, .12);
+  border: 0;
   color: var(--azul);
 }
 
@@ -838,13 +842,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .login-beneficios strong {
-  font-size: .88rem;
-  font-weight: 600;
+  font-size: .95rem;
+  font-weight: 700;
 }
 
 .login-beneficios small {
   color: var(--suave);
-  font-size: .78rem;
+  font-size: .82rem;
 }
 
 .login-aviso {
@@ -887,8 +891,24 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 10px;
 }
 
-/* Logo do Discord é preenchida (não é ícone de traço) */
+/* Botão do Discord: roxo da marca com a logo preenchida em branco */
+a.btn.ativo.login-botao {
+  background: #5865f2;
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  gap: 10px;
+}
+
+a.btn.ativo.login-botao:hover:not(:disabled) {
+  background: #6b77f5;
+}
+
 .login-botao svg {
+  width: 24px;
+  height: 24px;
   fill: currentColor;
   stroke: none;
 }
